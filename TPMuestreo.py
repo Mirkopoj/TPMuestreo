@@ -3,13 +3,13 @@ import matplotlib.pyplot as plt
 
 #__Parametros__##########################
 #Nº de muestras de tiempo
-N = 17
+N = 100
 #Nº de muestras de frecuencia
 M = 1024
 #Frecuencia en Hertz
-FS = 60
+FS = 200
 F1 = 80
-F2 = 100
+F2 = 80.5
 #########################################
 
 #__Ejes__################################
@@ -106,7 +106,7 @@ ax[0].set_xlabel(
 ax[0].set_ylabel('Amplitud')            
 ax[1].set_xlabel('Frecuencia')          
 ax[1].set_ylabel('Amplitud')            
-axLabels = np.linspace(-FS, FS, 7) 
+axLabels = np.linspace(-FS, FS, 81) 
 #axLabels = np.linspace(-1, 1, 32+1)    
 #axLabels = np.linspace(-1, 1, 2*M+1)    
 ax[1].xaxis.set_ticks(axLabels)         
@@ -115,7 +115,8 @@ ax[1].grid()
 plt.ylabel('Amplitud')
 plt.xlabel('Frecuencia [Hz]')
 plt.grid()
-#plt.xticks(rotation=90)                 
+plt.grid()
+plt.xticks(rotation=90)                 
 #plt.xlim(-1,1)
 plt.tight_layout()                      
 plt.subplots_adjust(
