@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 #__Parametros__##########################
 #Nº de muestras de tiempo
-N = 170
+N = 847
 #Nº de muestras de frecuencia
 M = 1024
 #Frecuencia en Hertz
@@ -106,7 +106,7 @@ ax[0].set_xlabel(
 ax[0].set_ylabel('Amplitud')            
 ax[1].set_xlabel('Frecuencia')          
 ax[1].set_ylabel('Amplitud')            
-axLabels = np.linspace(-FS, FS, 65) 
+axLabels = np.linspace(-FS, FS, 7) 
 #axLabels = np.linspace(-1, 1, 32+1)    
 #axLabels = np.linspace(-1, 1, 2*M+1)    
 ax[1].xaxis.set_ticks(axLabels)         
