@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 #__Parametros__##########################
 #Nº de muestras de tiempo
-N = 847
+N = 17
 #Nº de muestras de frecuencia
 M = 1024
 #Frecuencia en Hertz
@@ -102,7 +102,7 @@ ax[1].plot(f, F(Fun), 'r-')
 #ax[1].plot(c, Del, 'b-')                
 #ax[1].plot(c, abs(FC), 'g-')       
 ax[0].set_xlabel(
-    'Muestras (en el tiempo)')          
+    'Muestras (en el tiempo) [S]')          
 ax[0].set_ylabel('Amplitud')            
 ax[1].set_xlabel('Frecuencia')          
 ax[1].set_ylabel('Amplitud')            
@@ -113,13 +113,13 @@ ax[1].xaxis.set_ticks(axLabels)
 ax[0].grid()                            
 ax[1].grid()
 plt.ylabel('Amplitud')
-plt.xlabel('Frecuencia')
+plt.xlabel('Frecuencia [Hz]')
 plt.grid()
-plt.xticks(rotation=90)                 
+#plt.xticks(rotation=90)                 
 #plt.xlim(-1,1)
 plt.tight_layout()                      
 plt.subplots_adjust(
-        left=0.043,
+        left=0.053,
         bottom=0.085)
 plt.show()                              
 #########################################
